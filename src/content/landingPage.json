@@ -1,0 +1,27 @@
+{
+  "header": {
+    "logoText": "Decoded Music Logo",
+    "navLinks": [
+      {"text": "Catalog (Buyers)", "href": "/catalog"},
+      {"text": "Artist Dashboard", "href": "/artist/dashboard"},
+      {"text": "About", "href": "/about"},
+      {"text": "Contact", "href": "/contact"}
+    ],
+    "signInButtonText": "Sign In",
+    "signInButtonHref": "/signin",
+    "signUpButtonText": "Sign Up",
+    "signUpButtonHref": "/signup"
+  },
+  "hero": {
+    "logoAltText": "Decoded Music Logo",
+    "headline": "Decoded Music",
+    "tagline": "License Music • Join the Movement",
+    "hypeText": "Unlock dynamic licenses that fit your project. Access a curated catalog of high-quality music, licensed exactly how you need it, for a price that just makes sense.",
+    "primaryCtaText": "⚡️ Calculate Your Price Now ⚡️",
+    "primaryCtaHref": "#pricing-section",
+    "secondaryCtaText": "For Artists: Join the Revolution →",
+    "secondaryCtaHref": "/artist/signup",
+    "videoSrc": "/p1.mp4"
+  }
+  // ... additional JSON content ...
+}
