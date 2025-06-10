@@ -2,10 +2,10 @@
   "header": {
     "logoText": "Decoded Music Logo",
     "navLinks": [
-      {"text": "Catalog (Buyers)", "href": "/catalog"},
-      {"text": "Artist Dashboard", "href": "/artist/dashboard"},
-      {"text": "About", "href": "/about"},
-      {"text": "Contact", "href": "/contact"}
+      { "text": "Catalog (Buyers)", "href": "/catalog" },
+      { "text": "Artist Dashboard", "href": "/artist/dashboard" },
+      { "text": "About", "href": "/about" },
+      { "text": "Contact", "href": "/contact" }
     ],
     "signInButtonText": "Sign In",
     "signInButtonHref": "/signin",
@@ -22,6 +22,131 @@
     "secondaryCtaText": "For Artists: Join the Revolution →",
     "secondaryCtaHref": "/artist/signup",
     "videoSrc": "/p1.mp4"
+  },
+  "problemSolution": {
+    "headline": "Cut the Red Tape. Amplify Your Art.",
+    "introText": "Outdated Processes vs: Cloud-Native Clarity",
+    "problemTitle": "Traditional Licensing: Slow, Opaque, Complex.",
+    "problemBody": "Navigating music rights is a headache. Finding tracks is hard, clearance takes forever, and usage is unclear.",
+    "problemBulletPoints": ["Lengthy negotiations", "Hidden fees & confusing terms", "Difficult rights tracking"],
+    "solutionTitle": "Decoded Music: Fast, Transparent, Empowering.",
+    "solutionBody": "We connect you directly. Browse curated, pre-cleared catalog, license instantly, and get real-time insights.",
+    "solutionBulletPoints": ["Instant licensing & clearance", "Transparent dynamic pricing", "Real-time performance data"],
+    "techMention": "Powered by real-time data and scalable cloud infrastructure."
+  },
+  "artistShowcase": {
+    "headline": "Artist Showcase",
+    "featuredArtistSubHeadline": "Featuring: Rue de Vivre.",
+    "featuredArtistBody": "Explore the debut catalog from our foundational artist, Rue de Vivre. Unique soundscapes crafted for film, advertising, and content. Ready for instant preview and licensing.",
+    "browseCatalogCtaText": "Browse Rue de Vivre Catalog →",
+    "browseCatalogCtaHref": "/catalog?artist=rue-de-vivre",
+    "licenseSoundCtaText": "License This Sound →",
+    "licenseSoundCtaHref": "/catalog?artist=rue-de-vivre",
+    "spotifyExploreSubHeadline": "Explore Rue de Vivre's Sound.",
+    "spotifyEmbeds": [
+      {"src": "https://open.spotify.com/embed/album/3RfwstnKQDxCCzS7rBwESS?utm_source=generator"},
+      {"src": "https://open.spotify.com/embed/playlist/3GXIvkBZwc3Y9GACWWEmJ9?utm_source=generator"},
+      {"src": "https://open.spotify.com/embed/playlist/4BFQN83x5VenHywmXIUC9X?utm_source=generator"},
+      {"src": "https://open.spotify.com/embed/artist/293x3NAIGPR4RCJrFkzs0P?utm_source=generator"},
+      {"src": "https://open.spotify.com/embed/track/4VJ4yv1uMrfpdbJpdz3epO?utm_source=generator"},
+      {"src": "https://open.spotify.com/embed/album/6hCajqjMcAwptBiNc7IQEM?utm_source=generator"},
+      {"src": "https://open.spotify.com/embed/album/42mx8xKI7RSRR0w430waoW?utm_source=generator"},
+      {"src": "https://open.spotify.com/embed/album/236pSs89fMYpqMi5YJs6kW?utm_source=generator"}
+    ],
+    "spotifyDisclaimer": "Preview tracks via Spotify. Licensing occurs on Decoded Music."
+  },
+  "dynamicPricing": {
+    "headline": "PRICING THAT ADAPTS TO YOU.",
+    "introText": "Forget one-size-fits-all fees. Our smart pricing engine factors in exactly what you need:",
+    "howItWorksItems": [
+      {"icon": "user", "text": "👤 WHO (Your Industry/Use Case)"},
+      {"icon": "clock", "text": "⏳ HOW LONG (License Duration)"},
+      {"icon": "scissors", "text": "✂️ HOW MUCH (Clip Length / Full Track)"},
+      {"icon": "chart", "text": "📈 HOW BIG (Views for UGC / Project Scope)"}
+    ],
+    "priceCalloutText": "Licenses As Low As",
+    "minPrice": "$0.99!",
+    "priceDisclaimer": "*For specific use cases and durations. Calculate your custom price.",
+    "useCasesHeadline": "Pricing By Use Case",
+    "useCases": [
+      {"icon": "film", "title": "FILM & VIDEO PROS", "description": "Seamlessly license tracks for documentaries, short films, and promotional videos.", "cta": "Get Film Licenses", "link": "/catalog?use_case=film"},
+      {"icon": "social", "title": "UGC CREATORS", "description": "Access our library for social media content with UNBEATABLE CREATOR PRICING.", "cta": "🔥 See Creator Subscriptions", "link": "/pricing?audience=ugc"},
+      {"icon": "brand", "title": "BRANDS & AGENCIES", "description": "Find the perfect sound for campaigns, commercials, and corporate content.", "cta": "License For Your Brand", "link": "/catalog?use_case=brand"},
+      {"icon": "mic", "title": "PODCASTERS", "description": "Intro/outro music, background tracks, and sound design elements for your show.", "cta": "Get Podcast Music", "link": "/catalog?use_case=podcast"}
+    ],
+    "beyondBasicsTitle": "Beyond The Basics:",
+    "beyondBasicsList": [
+      {"icon": "clip", "text": "Clip Increments"},
+      {"icon": "instrumental", "text": "Instrumental Versions Included"},
+      {"icon": "regional", "text": "Regional Licensing Options"}
+    ],
+    "finalCtaText": "🚀 Calculate Your Custom License",
+    "finalCtaHref": "#pricing-calculator"
+  },
+  "buyers": {
+    "headline": "For Brands & Creators: Your Next Project Needs Decoded Music.",
+    "introText": "Stop sifting through endless libraries. Decoded Music provides the speed and clarity you need.",
+    "features": [
+      {"iconName": "search", "title": "Intelligent Search", "description": "Powered by OpenSearch Serverless, find the perfect track instantly with precise filters."},
+      {"iconName": "check", "title": "Pre-Cleared Catalog", "description": "All tracks are pre-licensed for common use cases, enabling instant purchase and download."},
+      {"iconName": "cart", "title": "Seamless Checkout", "description": "Our integrated flow (via Stripe/Aurora) makes licensing quick, easy, and secure."},
+      {"iconName": "download", "title": "High-Quality Assets", "description": "Access WAV/MP3 via secure S3 paths immediately after licensing."},
+      {"iconName": "chart", "title": "Usage Tracking Dashboard", "description": "Monitor where and how you’ve licensed music directly from your dashboard."}
+    ],
+    "ctaText": "Start Browsing the Catalog →",
+    "ctaHref": "/catalog"
+  },
+  "artists": {
+    "headline": "For Artists: Take Control with Your Unified Dashboard.",
+    "tagline": "Created by Artist for Artist.",
+    "introText": "Gain unprecedented transparency and control over your music and earnings.",
+    "features": [
+      {"iconName": "upload", "title": "Catalog Management", "description": "Easily upload, manage metadata, and set licensing options via our dashboard (powered by API/DynamoDB)."},
+      {"iconName": "split", "title": "Transparent Splits", "description": "Set and track revenue splits accurately and transparently (Aurora Serverless/QLDB detail)."},
+      {"iconName": "analytics", "title": "Performance Analytics", "description": "Know exactly where your music is used globally with real-time insights (QuickSight/Kinesis/Glue/Redshift detail)."},
+      {"iconName": "rights", "title": "Rights Management", "description": "Securely manage legal documents and rights status (S3 legal storage)."},
+      {"iconName": "marketing", "title": "Marketing Hub", "description": "Access tools to promote your music and connect with potential buyers (SES/SNS concepts)."},
+      {"iconName": "direct", "title": "Direct Licensing Opportunities", "description": "Get discovered and receive direct offers for exclusive projects."}
+    ],
+    "ctaText": "Join as a Decoded Artist →",
+    "ctaHref": "/artist/signup"
+  },
+  "collaboration": {
+    "headline": "Write with Rue de Vivre.",
+    "bodyText": "Producers, topliners, and lyricists—pitch ideas, co-write, and get credited on future releases.",
+    "ctaText": "Sign Up to Collaborate →",
+    "ctaHref": "/signup?role=collaborator&artist=rue"
+  },
+  "aws": {
+    "headline": "Engineered for Excellence. Powered by AWS.",
+    "bodyText": "Leveraging the power and reliability of AWS cloud infrastructure for seamless licensing, secure data, and global scalability."
+  },
+  "finalCta": {
+    "headline": "Ready to Decode Music?",
+    "cta1Text": "Find Music to License →",
+    "cta1Href": "/catalog",
+    "cta2Text": "Join as an Artist / Label →",
+    "cta2Href": "/artist/signup"
+  },
+  "footer": {
+    "logoText": "Decoded Music Logo",
+    "copyright": "© {year} Decoded Music. All rights reserved.",
+    "quickLinksTitle": "Quick Links",
+    "quickLinks": [
+      { "text": "About Us", "href": "/about" },
+      { "text": "Terms of Service", "href": "/terms" },
+      { "text": "Privacy Policy", "href": "/privacy" },
+      { "text": "Your GDPR Data", "href": "/gdpr" },
+      { "text": "Contact", "href": "/contact" }
+    ],
+    "socialLinksTitle": "Follow Us",
+    "socialLinks": [
+      { "icon": "facebook", "href": "YOUR_FACEBOOK_URL", "label": "Facebook" },
+      { "icon": "spotify", "href": "YOUR_SPOTIFY_URL", "label": "Spotify" },
+      { "icon": "youtube", "href": "YOUR_YOUTUBE_URL", "label": "YouTube" },
+      { "icon": "discord", "href": "YOUR_DISCORD_INVITE", "label": "Discord" }
+    ],
+    "privacyNote": "We will not sell your data."
   }
-  // ... additional JSON content ...
 }
+

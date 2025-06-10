@@ -1,5 +1,45 @@
 # Decoded Music Landing Page
 
-This repository contains the front-end code for the Decoded Music high-hype landing page.
+This repository contains the front-end code for the Decoded Music high-hype landing page, designed to captivate Brands, UGC Creators, and Artists.
 
-... (full README content as provided)
+The design is based on a detailed blueprint incorporating specific section structures, visual ratios (implemented via CSS layout), a modern aesthetic, and a focus on dynamic pricing and artist empowerment.
+
+**Design Foundation:**
+
+*   **Font:** Helvetica (or a suitable fallback like Arial)
+*   **Background:** `#111` (Dark Grey/Black)
+*   **Text:** `#fff` (White)
+*   **Accent:** `#32C1ED` (Cyan/Aqua)
+
+**Structure:**
+
+The page is built as a sequence of components, each representing a distinct section defined in the blueprint. CSS Modules are used for styling, and layout techniques (Flexbox, Grid) are employed to translate the conceptual "frame ratios" from the design phase into responsive visual structures.
+
+**Conceptual Backend Integration:**
+
+While this repository focuses solely on the front-end UI, the blueprint mentions various backend technologies (AWS services, Stripe, etc.). The front-end code includes placeholder elements and comments indicating where interactions with a backend API would occur (e.g., form submissions, triggering pricing calculations, fetching catalog data). A fully functional application would require implementing these backend services.
+
+**Getting Started:**
+
+1.  Clone the repository: `git clone https://github.com/yourusername/decoded-music-landing-page.git`
+2.  Navigate to the project directory: `cd decoded-music-landing-page`
+3.  Install dependencies: `npm install` (or `yarn install`)
+4.  Start the development server: `npm start` (or `yarn start`)
+
+This will open the landing page in your browser at `http://localhost:3000/`.
+
+**Implementation Notes:**
+
+*   **Frame Ratios:** Visual ratios specified in the blueprint (e.g., 3:2, 1:1, 2:3) are implemented using CSS layout techniques (Flexbox, Grid) and responsive design principles, not actual `<iframe>` elements.
+*   **Responsiveness:** The layout is designed to be responsive, stacking sections and grid elements vertically on smaller screens (mobile) and adjusting column layouts for larger screens (desktop).
+*   **Placeholder Content:** Content like specific artist details (Rue de Vivre), catalog items, and pricing calculation logic are placeholders. These would connect to a real backend API in a production application.
+*   **Icons:** Placeholder text like `[Icon]` is used. You would integrate an icon library (like React Icons) or use SVGs.
+*   **Video:** Ensure `public/p1.mp4` exists for the hero section video.
+
+**Future Development:**
+
+*   Implement backend APIs for user authentication, catalog management, dynamic pricing calculation, licensing, and analytics.
+*   Integrate with Stripe for payment processing.
+*   Develop the `/catalog`, `/artist/signup`, and other linked pages.
+*   Replace placeholder content with dynamic data fetched from the backend.
+*   Add actual icons and refine styling based on detailed design assets.
