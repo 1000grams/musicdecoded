@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '../styles/Section3DiscoverSound.module.css'; // Keep CSS module name for simplicity
+import styles from '../styles/Section3ArtistShowcase.module.css'; // Keep CSS module name for simplicity
 import Button from '../components/Button';
 import Icon from '../components/Icon';
 import content from '../content/landingPage.json'; // Import content
