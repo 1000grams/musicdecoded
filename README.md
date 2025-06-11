@@ -65,3 +65,5 @@ opened in a browser.
 *   Develop the `/catalog`, `/artist/signup`, and other linked pages.
 *   Replace placeholder content with dynamic data fetched from the backend.
 *   Add actual icons and refine styling based on detailed design assets.
+*   See [docs/artist-dashboard-plan.md](docs/artist-dashboard-plan.md) for a
+    proposed Artist Dashboard backend and adoption strategy.
