@@ -37,6 +37,7 @@ This document outlines a proposed backend structure for the Artist Dashboard and
 
 ### Integrations & APIs
 - Connectors for major DSP dashboards
+- Spotify OAuth login for secure artist authentication
 - Optional accounting and CRM integrations
 
 ## 2. Hype & Adoption Strategies
