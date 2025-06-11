@@ -49,7 +49,7 @@ function Footer() {
             ))}
           </div>
         </div>
-        {/* Optional Newsletter Signup (commented out in JSON and here) */}
+        {/* Optional area for a future newsletter signup */}
       </div>
     </footer>
   );
