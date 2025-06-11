@@ -223,3 +223,4 @@ function Footer() {
 }
 
 export default Footer;
+<a href="/policies.html" target="_blank" rel="noopener noreferrer" className="underline">Terms of Service & Privacy Policy</a>
