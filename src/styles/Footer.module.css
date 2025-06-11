@@ -16,7 +16,7 @@
   justify-content: space-between;
 }
 
-.brandInfo, .links, .social, .newsletter {
+.brandInfo, .links, .social, .buzz {
   flex: 1; /* Allow columns to grow */
   min-width: 150px; /* Minimum width before wrapping */
   /* Adjust min-width if columns are wrapping too early/late */
@@ -41,7 +41,7 @@
 }
 
 
-.links h4, .social h4, .newsletter h4 {
+.links h4, .social h4, .buzz h4 {
   color: var(--text-color);
   margin-bottom: 1rem; /* Adjust spacing */
 }
@@ -87,7 +87,7 @@
   color: var(--accent-color);
 }
 
-/* Newsletter form styling (if implemented) */
+/* Buzz form styling (if implemented) */
 
 /* Responsive adjustments */
 @media (max-width: 768px) { /* Adjust breakpoint as needed */
@@ -98,7 +98,7 @@
     gap: 3rem; /* Adjust gap when stacked */
   }
 
-  .brandInfo, .links, .social, .newsletter {
+  .brandInfo, .links, .social, .buzz {
     min-width: auto; /* Allow shrinking */
     width: 100%; /* Full width on mobile */
   }

@@ -34,7 +34,29 @@ This will open the landing page in your browser at `http://localhost:3000/`.
 *   **Responsiveness:** The layout is designed to be responsive, stacking sections and grid elements vertically on smaller screens (mobile) and adjusting column layouts for larger screens (desktop).
 *   **Placeholder Content:** Content like specific artist details (Rue de Vivre), catalog items, and pricing calculation logic are placeholders. These would connect to a real backend API in a production application.
 *   **Icons:** Placeholder text like `[Icon]` is used. You would integrate an icon library (like React Icons) or use SVGs.
-*   **Video:** Ensure `public/p1.mp4` exists for the hero section video.
+  *   **Video:** Ensure `public/p1.mp4` exists for the hero section video.
+
+## Industry Buzz Researcher
+
+The `npm run research` script (see `scripts/musicManagementResearcher.js`)
+scans public news sources for updates on labels, sync opportunities, artist
+deals, disputes, catalog sales, and contract releases. Results are summarized
+using AWS Bedrock and saved to `industry_buzz.txt`.
+
+The repository includes a `.env` file containing a default News API key. You can replace this key or set the `NEWS_API_KEY` environment variable and AWS credentials before running:
+
+```bash
+npm run research
+```
+
+Schedule this command to run daily (for example using `cron` or AWS EventBridge) so `industry_buzz.txt` stays up to date.
+
+The generated summary can be shared to social platforms via the
+[Threads Graph API](https://developers.facebook.com/docs/threads-api).
+
+The latest summary is displayed in `public/buzz.html`. This page uses Tailwind
+via CDN and fetches `industry_buzz.txt` to populate the bullet points when
+opened in a browser.
 
 **Future Development:**
 
