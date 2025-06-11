@@ -1,3 +1,4 @@
+import decodedMusicLogo from "../assets/decoded-music-decoded-music-logo.png";
 import React from 'react';
 import styles from '../styles/Section8AWS.module.css';
 import content from '../content/landingPage.json'; // Import content

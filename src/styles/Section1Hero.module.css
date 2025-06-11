@@ -50,9 +50,9 @@
 }
 
 .logo {
-    max-width: 150px; /* Adjust logo size */
-    height: auto;
-    margin-bottom: 1rem; /* Space below logo */
+  height: 40px;
+  width: auto;
+  display: inline-block;
 }
 
 .headline {
@@ -93,9 +93,11 @@
     border-width: 1px; /* Thinner border on mobile */
   }
 
-  .logo {
-      max-width: 100px; /* Smaller logo on mobile */
-  }
+.logo {
+  height: 40px;
+  width: auto;
+  display: inline-block;
+}
 
   .headline {
     font-size: 2rem; /* Smaller headline */

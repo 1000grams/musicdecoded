@@ -1,3 +1,13 @@
+import { Link } from "react-router-dom";
+// ...other imports
+
+// Inside your Header component's return:
+<nav className="flex gap-6">
+  <Link to="/dashboard">Artist Dashboard</Link>
+  <Link to="/about">About</Link>
+  <Link to="/contact">Contact</Link>
+</nav>
+import decodedMusicLogo from "../assets/decoded-music-decoded-music-logo.png";
 import React, { useState } from 'react';
 import styles from '../styles/Header.module.css';
 import Button from './Button';

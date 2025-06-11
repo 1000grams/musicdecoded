@@ -3,7 +3,7 @@ import styles from '../styles/Section1Hero.module.css';
 import Button from '../components/Button';
 import content from '../content/landingPage.json'; // Import content
 // Import your logo image here
-import decodedMusicLogo from '../assets/decoded-music-logo.png'; // Make sure you have the logo image
+import decodedMusicLogo from '../assets/decoded-music-decoded-music-logo.png'; // Make sure you have the logo image
 
 function Section1Hero() {
   return (
