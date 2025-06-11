@@ -10,22 +10,42 @@ function Header() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const handleNavLinkClick = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.logo}>
           {/* Replace with your actual logo image or SVG */}
-          <a href="/">{content.header.logoText}</a>
+          <a href="/" onClick={handleNavLinkClick}>{content.header.logoText}</a>
         </div>
         <nav className={`${styles.nav} ${isMobileMenuOpen ? styles.mobileNavOpen : ''}`}>
           <ul>
             {content.header.navLinks.map((link, index) => (
-              <li key={index}><a href={link.href}>{link.text}</a></li>
+              <li key={index}>
+                <a href={link.href} onClick={handleNavLinkClick}>{link.text}</a>
+              </li>
             ))}
           </ul>
           <div className={styles.authButtons}>
-            <Button variant="outline" color="accent" href={content.header.signInButtonHref}>{content.header.signInButtonText}</Button>
-            <Button variant="fill" color="accent" href={content.header.signUpButtonHref}>{content.header.signUpButtonText}</Button>
+            <Button
+              variant="outline"
+              color="accent"
+              href={content.header.signInButtonHref}
+              onClick={handleNavLinkClick}
+            >
+              {content.header.signInButtonText}
+            </Button>
+            <Button
+              variant="fill"
+              color="accent"
+              href={content.header.signUpButtonHref}
+              onClick={handleNavLinkClick}
+            >
+              {content.header.signUpButtonText}
+            </Button>
           </div>
         </nav>
         <button className={styles.burgerMenu} onClick={toggleMobileMenu} aria-label="Toggle navigation menu">

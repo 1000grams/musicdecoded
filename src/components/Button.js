@@ -6,7 +6,7 @@ function Button({ children, variant = 'fill', color = 'accent', href, onClick })
 
   if (href) {
     return (
-      <a className={className} href={href}>
+      <a className={className} href={href} onClick={onClick}>
         {children}
       </a>
     );
