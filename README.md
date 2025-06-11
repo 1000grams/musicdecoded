@@ -58,6 +58,18 @@ The latest summary is displayed in `public/buzz.html`. This page uses Tailwind
 via CDN and fetches `industry_buzz.txt` to populate the bullet points when
 opened in a browser.
 
+## Spotify Login Setup
+
+The Artist Dashboard now uses Spotify's authorization flow. Create a Spotify
+application and add the client ID and redirect URI to a `.env` file:
+
+```bash
+REACT_APP_SPOTIFY_CLIENT_ID=your_client_id
+REACT_APP_SPOTIFY_REDIRECT_URI=http://localhost:3000/dashboard
+```
+
+These values are read by the front-end to initiate the login process.
+
 **Future Development:**
 
 *   Implement backend APIs for user authentication, catalog management, dynamic pricing calculation, licensing, and analytics.
