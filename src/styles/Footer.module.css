@@ -4,6 +4,7 @@
   color: var(--footer-text-color);
   padding: 3rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+  font-size: 8pt; /* Smaller footer text */
 }
 
 .container {
@@ -85,6 +86,13 @@
 
 .socialIcons a:hover {
   color: var(--accent-color);
+}
+
+/* Footer video styling */
+.footerVideo {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 480px;
 }
 
 /* Newsletter form styling (if implemented) */

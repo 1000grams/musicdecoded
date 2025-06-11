@@ -49,7 +49,11 @@ function Footer() {
             ))}
           </div>
         </div>
-        {/* Optional Newsletter Signup (commented out in JSON and here) */}
+        {/* Optional area for a future newsletter signup */}
+        <video className={styles.footerVideo} controls>
+          <source src="/p1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </footer>
   );
