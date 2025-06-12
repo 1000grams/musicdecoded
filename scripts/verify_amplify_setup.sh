@@ -27,6 +27,47 @@ frontend:
 YAML
 fi
 
+# Ensure Amplify configuration files exist
+PROJECT_CONFIG="amplify/.config/project-config.json"
+TEAM_INFO="amplify/team-provider-info.json"
+BACKEND_CONFIG="amplify/backend/backend-config.json"
+
+# Create team-provider-info.json if missing or empty
+if [ ! -s "$TEAM_INFO" ]; then
+  echo "team-provider-info.json missing or empty. Creating minimal file."
+  mkdir -p "$(dirname "$TEAM_INFO")"
+  echo '{}' > "$TEAM_INFO"
+fi
+
+# Create project-config.json if missing
+if [ ! -f "$PROJECT_CONFIG" ]; then
+  echo "project-config.json missing. Creating minimal project config."
+  mkdir -p "$(dirname "$PROJECT_CONFIG")"
+  cat > "$PROJECT_CONFIG" <<'JSON'
+{
+  "projectName": "musicdecoded",
+  "version": "3.0",
+  "frontend": "javascript",
+  "javascript": {
+    "framework": "react",
+    "config": {
+      "SourceDir": "src",
+      "DistributionDir": "build",
+      "BuildCommand": "npm run-script build",
+      "StartCommand": "npm run-script start"
+    }
+  }
+}
+JSON
+fi
+
+# Create backend-config.json if missing
+if [ ! -f "$BACKEND_CONFIG" ]; then
+  echo "backend-config.json missing. Creating empty config."
+  mkdir -p "$(dirname "$BACKEND_CONFIG")"
+  echo '{}' > "$BACKEND_CONFIG"
+fi
+
 # Ensure Lambda package exists
 LAMBDA_DIR="amplify/backend/function/DecodedMusicLambda/src"
 LAMBDA_ZIP="$LAMBDA_DIR/decodedmusic_lambda_package.zip"
