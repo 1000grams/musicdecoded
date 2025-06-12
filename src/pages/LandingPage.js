@@ -1,4 +1,5 @@
 import React from 'react';
+import decodedMusicLogo from '../assets/decoded-music-logo.png';
 import PageLayout from '../layouts/PageLayout';
 import Section1Hero from '../sections/Section1Hero';
 import Section2ProblemSolution from '../sections/Section2ProblemSolution';

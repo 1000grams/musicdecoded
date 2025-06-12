@@ -1,17 +1,9 @@
-import { Link } from "react-router-dom";
-// ...other imports
-
-// Inside your Header component's return:
-<nav className="flex gap-6">
-  <Link to="/dashboard">Artist Dashboard</Link>
-  <Link to="/about">About</Link>
-  <Link to="/contact">Contact</Link>
-</nav>
-import decodedMusicLogo from "../assets/decoded-music-logo.png";
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styles from '../styles/Header.module.css';
 import Button from './Button';
-import content from '../content/landingPage.json'; // Import content
+import content from '../content/landingPage.json';
+import decodedMusicLogo from '../assets/decoded-music-logo.png';
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
