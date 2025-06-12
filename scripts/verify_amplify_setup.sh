@@ -56,7 +56,10 @@ if [ ! -f "$PROJECT_CONFIG" ]; then
       "BuildCommand": "npm run-script build",
       "StartCommand": "npm run-script start"
     }
-  }
+  },
+  "providers": [
+    "awscloudformation"
+  ]
 }
 JSON
 fi
