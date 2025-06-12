@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
   <Link to="/about">About</Link>
   <Link to="/contact">Contact</Link>
 </nav>
-import decodedMusicLogo from "../assets/decoded-music-decoded-music-logo.png";
+import decodedMusicLogo from "../assets/decoded-music-logo.png";
 import React, { useState } from 'react';
 import styles from '../styles/Header.module.css';
 import Button from './Button';
@@ -28,8 +28,9 @@ function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          {/* Replace with your actual logo image or SVG */}
-          <a href="/" onClick={handleNavLinkClick}>{content.header.logoText}</a>
+          <a href="/" onClick={handleNavLinkClick}>
+            <img src={decodedMusicLogo} alt="Decoded Music Logo" className="h-10 w-auto" />
+          </a>
         </div>
         <nav className={`${styles.nav} ${isMobileMenuOpen ? styles.mobileNavOpen : ''}`}>
           <ul>

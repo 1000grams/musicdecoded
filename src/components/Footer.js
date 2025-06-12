@@ -164,7 +164,7 @@ echo "🚀 Next steps:"
 echo "1. Run 'amplify add function' and select the contactFormHandler directory."
 echo "2. Run 'amplify add api' to create a REST endpoint /api/contact and connect it to your Lambda."
 echo "3. Run 'amplify push' to deploy."
-echo "4. Test /about and /contact from both header and footer."import decodedMusicLogo from "../assets/decoded-music-decoded-music-logo.png";
+echo "4. Test /about and /contact from both header and footer."import decodedMusicLogo from "../assets/decoded-music-logo.png";
 import React from 'react';
 import styles from '../styles/Footer.module.css';
 import content from '../content/landingPage.json'; // Import content
@@ -190,8 +190,7 @@ function Footer() {
       <div className={styles.container}>
         <div className={styles.brandInfo}>
           <div className={styles.logo}>
-            {/* Replace with your actual logo image or SVG */}
-            {content.footer.logoText}
+            <img src={decodedMusicLogo} alt="Decoded Music Logo" className="h-10 w-auto" />
           </div>
           <p className={styles.copyright}>{copyrightText}</p>
            {/* Added privacy note below copyright or near privacy link */}

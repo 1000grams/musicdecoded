@@ -1,4 +1,4 @@
-import decodedMusicLogo from "../assets/decoded-music-decoded-music-logo.png";
+import decodedMusicLogo from "../assets/decoded-music-logo.png";
 import React from 'react';
 import styles from '../styles/Section8AWS.module.css';
 import content from '../content/landingPage.json'; // Import content
@@ -10,6 +10,7 @@ function Section8AWS() {
     <section className={styles.section}>
       <div className={styles.container}>
          <div className={styles.logoBlock}>
+            <img src={decodedMusicLogo} alt="Decoded Music Logo" className="h-10 w-auto" />
             <img src={awsLogo} alt="Powered by AWS" className={styles.awsLogo} />
          </div>
          <div className={styles.textBlock}>
