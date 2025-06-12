@@ -3,7 +3,7 @@ import styles from '../styles/Section1Hero.module.css';
 import Button from '../components/Button';
 import content from '../content/landingPage.json'; // Import content
 // Import your logo image here
-import decodedMusicLogo from '../assets/decoded-music-decoded-music-logo.png'; // Make sure you have the logo image
+import decodedMusicLogo from '../assets/decoded-music-logo.png';
 
 function Section1Hero() {
   return (
@@ -17,7 +17,7 @@ function Section1Hero() {
         <div className={styles.overlay}></div> {/* Dark overlay */}
       </div>
       <div className={styles.framedContent}> {/* New container for the "framed" look */}
-        <img src={decodedMusicLogo} alt={content.hero.logoAltText} className={styles.logo} />
+        <img src={decodedMusicLogo} alt="Decoded Music Logo" className="h-10 w-auto" />
         <h1 className={styles.headline}>{content.hero.headline}</h1>
         <p className={styles.tagline}>{content.hero.tagline}</p> {/* Use tagline from JSON */}
         <p className={styles.hypeText}>
