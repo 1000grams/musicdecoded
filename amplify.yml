@@ -7,6 +7,8 @@ backend:
       commands:
         # install the Amplify CLI so amplifyPush is available
         - npm install -g @aws-amplify/cli
+        # verify required Amplify config files exist
+        - bash scripts/verify_amplify_setup.sh
     build:
       commands:
         # this helper will push your current branch's backend config
