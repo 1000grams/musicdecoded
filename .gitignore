@@ -31,3 +31,7 @@ out/
 # OS specific files
 .DS_Store
 Thumbs.db
+
+# Ignore zip build files
+src/*.zip
+
