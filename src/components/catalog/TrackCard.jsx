@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardContent, CardFooter, Button } from "@/components/ui";
+import { Card, CardContent, CardFooter, Button } from "../ui";
 
 export default function TrackCard({ track }) {
   return (
