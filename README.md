@@ -79,3 +79,15 @@ These values are read by the front-end to initiate the login process.
 *   Add actual icons and refine styling based on detailed design assets.
 *   See [docs/artist-dashboard-plan.md](docs/artist-dashboard-plan.md) for a
     proposed Artist Dashboard backend and adoption strategy.
+
+## Running in Codex
+
+If you encounter a message like "Codex couldn't run certain commands due to environment limitations," make sure the container installs dependencies before running tests or other commands. A simple `setup.sh` script can be used:
+
+```bash
+#!/bin/bash
+set -e
+npm install
+```
+
+Run this script manually or in your CI pipeline so the environment has the required packages when Codex executes your commands.
