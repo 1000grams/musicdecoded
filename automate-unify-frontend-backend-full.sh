@@ -8,7 +8,7 @@ import React from "react";
 export default function About() {
   return (
     <div className="max-w-2xl mx-auto p-8">
-      <h1 className="text-3xl font-bold mb-4"><a href="/about" className="underline">About Us</a></h1>
+      <h1 className="text-3xl font-bold mb-4">About Us</h1>
       <p>
         The modern music landscape can feel like a labyrinth of locked doors, each guarded by someone insisting they alone hold “the real” keys. It’s easy to feel every corridor is blocked by playlist curators, opaque label execs, or pitch-deck gatekeepers who seem to multiply faster than streaming platforms themselves.
       </p>
@@ -99,8 +99,8 @@ fi
 # 4. Update Footer About link (src/components/Footer.js)
 FOOTER="src/components/Footer.js"
 if [ -f "$FOOTER" ]; then
-  # Replace <a href="/about" className="underline">About Us</a> text/link with a route to /about
-  sed -i 's|<a href="/about" className="underline">About Us</a>|<a href="/about" className="underline"><a href="/about" className="underline">About Us</a></a>|g' "$FOOTER"
+  # Replace About Us text/link with a route to /about
+  sed -i 's|About Us|<a href="/about" className="underline">About Us</a>|g' "$FOOTER"
   echo "✅ Updated About link in $FOOTER"
 else
   echo "⚠️  $FOOTER not found. Please update your footer manually."
@@ -164,62 +164,4 @@ echo "🚀 Next steps:"
 echo "1. Run 'amplify add function' and select the contactFormHandler directory."
 echo "2. Run 'amplify add api' to create a REST endpoint /api/contact and connect it to your Lambda."
 echo "3. Run 'amplify push' to deploy."
-echo "4. Test /about and /contact from both header and footer."import decodedMusicLogo from "../assets/decoded-music-logo.png";
-import React from 'react';
-import styles from '../styles/Footer.module.css';
-import content from '../content/landingPage.json'; // Import content
-// Assuming you use react-icons or similar, import them here
-// Example imports:
-// import { FaFacebookF, FaSpotify, FaYoutube, FaDiscord } from 'react-icons/fa';
-import Icon from './Icon'; // Use placeholder icon component
-
-function Footer() {
-  const currentYear = new Date().getFullYear();
-  const copyrightText = content.footer.copyright.replace('{year}', currentYear);
-
-  // Map icon names from JSON to actual component/SVG if using a library
-  const socialIconsMap = {
-    facebook: 'facebook', // Placeholder name
-    spotify: 'spotify', // Placeholder name
-    youtube: 'youtube', // Placeholder name
-    discord: 'discord', // Placeholder name
-  };
-
-  return (
-    <footer className={styles.footer}>
-      <div className={styles.container}>
-        <div className={styles.brandInfo}>
-          <div className={styles.logo}>
-            <img src={decodedMusicLogo} alt="Decoded Music Logo" className="h-10 w-auto" />
-          </div>
-          <p className={styles.copyright}>{copyrightText}</p>
-           {/* Added privacy note below copyright or near privacy link */}
-           {content.footer.privacyNote && <p className={styles.privacyNote}>{content.footer.privacyNote}</p>}
-        </div>
-        <div className={styles.links}>
-          <h4>{content.footer.quickLinksTitle}</h4>
-          <ul>
-            {content.footer.quickLinks.map((link, index) => (
-              <li key={index}><a href={link.href}>{link.text}</a></li>
-            ))}
-          </ul>
-        </div>
-        <div className={styles.social}>
-          <h4>{content.footer.socialLinksTitle}</h4>
-          <div className={styles.socialIcons}>
-            {content.footer.socialLinks.map((social, index) => (
-               <a key={index} href={social.href} aria-label={social.label} target="_blank" rel="noopener noreferrer">
-                  {/* Replace with actual icon component from library */}
-                  <Icon name={socialIconsMap[social.icon]} size="24px" color="var(--text-color)" /> {/* Use text color for icons */}
-               </a>
-            ))}
-          </div>
-        </div>
-        {/* Optional BUZZ Signup (commented out in JSON and here) */}
-      </div>
-    </footer>
-  );
-}
-
-export default Footer;
-<a href="/policies.html" target="_blank" rel="noopener noreferrer" className="underline">Terms of Service & Privacy Policy</a>
+echo "4. Test /about and /contact from both header and footer."
