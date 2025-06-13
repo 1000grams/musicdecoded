@@ -91,3 +91,42 @@ npm install
 ```
 
 Run this script manually or in your CI pipeline so the environment has the required packages when Codex executes your commands.
+
+## Deploying from CloudShell
+
+After committing changes to GitHub you can deploy them from an AWS CloudShell session. The process mirrors the commands in `amplify.yml`:
+
+1. **Clone or update the repository**
+
+   ```bash
+   git clone https://github.com/yourusername/decoded-music-landing-page.git
+   cd decoded-music-landing-page
+   # or pull the latest changes if the repo already exists
+   git pull
+   ```
+
+2. **Clear caches and reinstall dependencies**
+
+   ```bash
+   npm cache clean --force
+   rm -rf node_modules
+   npm ci
+   ```
+
+3. **Install the Amplify CLI and push backend resources**
+
+   ```bash
+   npm install -g @aws-amplify/cli
+   amplify push --yes
+   ```
+
+4. **Build the front-end and deploy**
+
+   ```bash
+   cd decodedmusic-frontend
+   npm run build
+   # optionally publish via Amplify
+   amplify publish
+   ```
+
+This sequence ensures the CloudShell environment has a fresh install and your latest commit before running the Amplify build and deploy steps.
