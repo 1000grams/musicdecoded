@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Link } from "react-router-dom";
 // ...other imports
 
 // Inside your Header component's return:
