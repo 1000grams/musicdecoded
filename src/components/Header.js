@@ -1,17 +1,8 @@
-import { Link } from "react-router-dom";
-// ...other imports
-
-// Inside your Header component's return:
-      <nav className="flex gap-6">
-        <Link to="/dashboard">Artist Dashboard</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
-import decodedMusicLogo from "../assets/decoded-music-logo.png";
 import React, { useState } from 'react';
+import decodedMusicLogo from '../assets/decoded-music-logo.png';
 import styles from '../styles/Header.module.css';
 import Button from './Button';
-import content from '../content/landingPage.json'; // Import content
+import content from '../content/landingPage.json';
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -32,11 +23,33 @@ function Header() {
             <img src={decodedMusicLogo} alt="Decoded Music Logo" className="h-10 w-auto" />
           </a>
         </div>
-      <nav className="flex gap-6">
-        <Link to="/dashboard">Artist Dashboard</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
+        <nav className={`${styles.nav} ${isMobileMenuOpen ? styles.mobileNavOpen : ''}`}>
+          <ul>
+            {content.header.navLinks.map((link, index) => (
+              <li key={index}>
+                <a href={link.href} onClick={handleNavLinkClick}>{link.text}</a>
+              </li>
+            ))}
+          </ul>
+          <div className={styles.authButtons}>
+            <Button
+              variant="outline"
+              color="accent"
+              href={content.header.signInButtonHref}
+              onClick={handleNavLinkClick}
+            >
+              {content.header.signInButtonText}
+            </Button>
+            <Button
+              variant="fill"
+              color="accent"
+              href={content.header.signUpButtonHref}
+              onClick={handleNavLinkClick}
+            >
+              {content.header.signUpButtonText}
+            </Button>
+          </div>
+        </nav>
         <button className={styles.burgerMenu} onClick={toggleMobileMenu} aria-label="Toggle navigation menu">
           {/* Replace with burger icon SVG/image */}
           {isMobileMenuOpen ? '✕' : '☰'}
