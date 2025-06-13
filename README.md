@@ -129,4 +129,4 @@ After committing changes to GitHub you can deploy them from an AWS CloudShell se
    amplify publish
    ```
 
-This sequence ensures the CloudShell environment has a fresh install and your latest commit before running the Amplify build and deploy steps.
+This sequence ensures the CloudShell environment has a fresh install and your latest commit before running the Amplify build and deploy steps. If you prefer an automated approach, use the `automate-cloudshell-deploy.sh` script which wraps these commands. Set `REPO`, `AMPLIFY_APP_ID` and `AMPLIFY_ENV_NAME` before executing it.
