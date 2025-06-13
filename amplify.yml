@@ -32,6 +32,4 @@ frontend:
     files:
       - '**/*'
   cache:
-    paths:
-      # - decodedmusic-frontend/node_modules/**/*
-      - ~/.npm
+    paths: []
